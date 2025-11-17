@@ -48,9 +48,9 @@ The main control node can be launched with different control modes using paramet
 ros2 launch ros2_kdl_package ros2_kdl_node.launch.py ctrl:=<controller_type>
 ```
 
-Available control modes:
-`velocity_ctrl` — Standard velocity control
-`velocity_ctrl_null` — Null-space control with joint limit avoidance
+where `controller_type` can be:<br>
+`velocity_ctrl` — Standard velocity control<br>
+`velocity_ctrl_null` — Null-space control with joint limit avoidance<br>
 `vision_ctrl` — Vision-based control using ArUco detection
 
 
