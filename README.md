@@ -49,9 +49,9 @@ ros2 launch ros2_kdl_package ros2_kdl_node.launch.py ctrl:=<controller_type>
 ```
 
 Available control modes:
-velocity_ctrl — Standard velocity control
-velocity_ctrl_null — Null-space control with joint limit avoidance
-vision_ctrl — Vision-based control using ArUco detection
+`velocity_ctrl` — Standard velocity control
+`velocity_ctrl_null` — Null-space control with joint limit avoidance
+`vision_ctrl` — Vision-based control using ArUco detection
 
 
 ## **5. Action Server and test client**
@@ -61,7 +61,7 @@ ros2 action send_goal /execute_trajectory ros2_kdl_package/action/ExecuteTraject
 "{traj_duration: 25.0, acc_duration: 10.0, total_time: 25.0, kp: 1.0, end_position_x: 0.7, end_position_y: 0.0, end_position_z: 1.0}"
 ```
 
-To test the server the correspective test client can be executed:
+To test the server, the correspective test client can be executed:
 ```shell
 ros2 run ros2_kdl_package trajectory_client
 ```
