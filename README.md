@@ -53,6 +53,12 @@ where `controller_type` can be:<br>
 `velocity_ctrl_null` — Null-space control with joint limit avoidance<br>
 `vision_ctrl` — Vision-based control using ArUco detection
 
+Alternatively, run from launch file with custom parameters :
+
+```bash
+ros2 run ros2_kdl_package ros2_kdl_node --ros-args -p cmd_interface:=velocity -p ctrl:=<controller_type>
+```
+
 
 ## **5. Action Server and test client**
 A trajectory can be executed asynchronously via the integrated Action Server:
